@@ -8,11 +8,27 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 import { FaHeartbeat } from "react-icons/fa";
 import { MdLibraryMusic } from "react-icons/md";
 import { RiLogoutBoxLine } from "react-icons/ri";
+import apiClient from '../../spotify';
 
 export default function Sidebar() {
+  const [image ,setImage]=useState(
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlie4MsQ9pJSSKY7DoEpxn3uBAq-rT7in1sA&s"
+  );
+  useEffect(() =>{
+    apiClient.get("me").then(response => {console.log(response);})
+
+  } )
+  // const [image, setImage] = useState(
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLAY3C19kL0nV2bI_plU3_YFCtra0dpsYkg&usqp=CAU"
+  // );
+  // useEffect(() => {
+  //   apiClient.get("me").then((response) => {
+  //     setImage(response.data.images[0].url);
+  //   });
+  // }, []);
   return (
     <div className='sidebar-container'>
-      <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg"
+      <img src={image}
       className="profile-img" alt="Profile" />
     
     <div >

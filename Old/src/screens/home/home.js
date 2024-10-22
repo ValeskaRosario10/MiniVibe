@@ -30,31 +30,47 @@ import { setClientToken } from '../../spotify'
 
 
 
+// export default function Home() {
+//   const [token, setToken] = useState("");
+//   useEffect(()=>{
+//     const _token =window.localStorage.getItem("token");
+//     const hash = window.location.hash;
+//     window.location.hash="";
+//     if (!token && hash){
+//       const _token=hash.split("&")[0].split('=')[1];
+//       window.localStorage.setItem("token",_token);
+//       setToken(_token);
+//       setClientToken(_token);
+//     }else {
+//       setToken(token);
+//       setClientToken(token);
+//     }
+
+//   } );
 export default function Home() {
   const [token, setToken] = useState("");
-  useEffect(()=>{
-    const _token =window.localStorage.getItem("token");
+
+  useEffect(() => {
+    const token = window.localStorage.getItem("token");
     const hash = window.location.hash;
-    window.location.hash="";
-    if (!token && hash){
-      const _token=hash.split("&")[0].split('=')[1];
-      window.localStorage.setItem("token",_token);
+    window.location.hash = "";
+    if (!token && hash) {
+      const _token = hash.split("&")[0].split("=")[1];
+      window.localStorage.setItem("token", _token);
       setToken(_token);
       setClientToken(_token);
-    }else {
+    } else {
       setToken(token);
       setClientToken(token);
     }
-
-  } );
-
+  }, []);
+// return <Login/> 
 
   return  token ? (
     <Login/> ) 
     : (
         <Router>
     <div className='main-body'>
-     
       <Sidebar/>
       <Routes>
         <Route path ="/"  element={<Library/>}/>

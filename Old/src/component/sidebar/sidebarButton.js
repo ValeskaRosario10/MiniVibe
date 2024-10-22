@@ -1,16 +1,15 @@
-
-import React from 'react';
-import { IconContext } from 'react-icons';
-import { Link , useLocation} from "react-router-dom";
+import React from "react";
+import { IconContext } from "react-icons";
+import { Link, useLocation } from "react-router-dom";
 import "./sidebarButton.css";
 
 export default function SidebarButton(props) {
-    const location = useLocation();
+  const location = useLocation();
 
-    const isActive = location.pathname === props.to;
-  
-    const btnClass = isActive ? "btn-body active" : "btn-body";
-return (
+  const isActive = location.pathname === props.to;
+
+  const btnClass = isActive ? "btn-body active" : "btn-body";
+    return (
     <Link to={props.to} > 
     <div className={btnClass} >
     <IconContext.Provider value={{ size: "35px", className: "btn-icon" }}>

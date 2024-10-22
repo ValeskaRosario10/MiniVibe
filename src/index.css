@@ -1,6 +1,3 @@
-@import url(./shared/globalstyle.css);
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,11 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body {
+  width: calc(100% - 100px);
+  height: 100%;
+  background-color: #1e2a3e;
+  border-radius: 30px;
+  background-color: #1e2a3e;
+  opacity: 1;
+  background-color: black
+  /* background-image: repeating-radial-gradient(
+      circle at center left,
+      transparent 0,
+      #233656 100px
+    ), */
+    repeating-linear-gradient(#1e2a3e55, #1e2a3e);
+}
+
+.flex {
+  display: flex;
 }

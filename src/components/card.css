@@ -1,0 +1,32 @@
+.dark-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dark-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark-card-img {
+  background-color: #333;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-text {
+  color: #ccc;
+}
+
+.btn-outline-light {
+  border-color: #555;
+}
+
+.btn-outline-light:hover {
+  background-color: #555;
+  color: #fff;
+}

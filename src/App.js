@@ -86,6 +86,7 @@ function App() {
     setpinnedMusic(JSON.parse(localStorage.getItem("pinnedMusic")));
   }, [setIsLoading, setLikedMusic, setpinnedMusic]);
 
+  const curryear = new Date().getFullYear();
   return (
     <>
       <Navbar
@@ -160,6 +161,26 @@ function App() {
   >
                 <i className="bi bi-github mx-2"></i>Github
               </a>
+
+              <footer>
+  <p style={{ color: "white" }}>
+    Copyright © {new Date().getFullYear()}
+  </p>
+  <div>
+    <a href="https://github.com/ValeskaRosario10" style={{ color: "white", textDecoration: "none" }}>ValeskaRosario</a>
+  </div>
+  <div>
+    <a href="https://github.com/SayantikaRoy2004" style={{ color: "white", textDecoration: "none" }}>SayantikaRoy</a>
+  </div>
+  <div>
+    <a href="https://github.com/sherlyshindal" style={{ color: "white", textDecoration: "none" }}>ShreyaShandal</a>
+  </div>
+  <div>
+    <a href="https://github.com/mars613" style={{ color: "white", textDecoration: "none" }}>Marcia Rodrigues</a>
+  </div>
+</footer>
+
+
             </div>
           </div>
         </div>
@@ -172,6 +193,8 @@ function App() {
         aria-hidden="true"
       >
         <CreatePlaylist />
+
+
       </div>
     </>
   );

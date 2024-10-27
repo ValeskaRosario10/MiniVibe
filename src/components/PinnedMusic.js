@@ -14,8 +14,8 @@ function PinnedMusic() {
   }, [setpinnedMusic]);
 
   return (
-    <div>
-      <div className="container">
+    <div >
+      <div className="container ">
         {pinnedMusic.length === 0 ? (
           <div className="row">
             <div className="col">

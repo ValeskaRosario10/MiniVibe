@@ -14,7 +14,7 @@ function LikedMusic() {
   }, [setlikedMusic]);
 
   return (
-    <div>
+    <div >
       {likedMusic.length === 0 ? (
         <div className="container">
           <div className="row">
@@ -37,7 +37,7 @@ function LikedMusic() {
       )}
 
       <div className="container">
-        <div className="row">
+        <div className="row" >
           {likedMusic.map((element) => {
             return <Card key={element.id} element={element} />;
           })}

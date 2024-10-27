@@ -52,9 +52,9 @@ function Card({ element }) {
   }, [setLikedMusic]);
 
   return (
-    <div key={element.id} className="col-lg-3 col-md-6 py-2 w=50">
+    <div key={element.id} className="col-lg-3 col-md-6 py-2">
       <div className="card dark-card">
-        <div className="ratio ratio-1x1 dark-card-img ">
+        <div className="ratio ratio-1x1 dark-card-img">
           <img
             src={element.album.images[0].url}
             className="card-img-top"
@@ -90,7 +90,7 @@ function Card({ element }) {
           <p className="card-text text-light">
             Release date: {element.album.release_date}
           </p>
-          <audio src={element.preview_url} controls className="w-100 h-20"></audio>
+          <audio src={element.preview_url} controls className="w-100"></audio>
         </div>
       </div>
     </div>

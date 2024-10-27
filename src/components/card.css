@@ -3,7 +3,7 @@
   border: 1px solid #333;
   border-radius: 8px;
   transition: all 0.3s ease;
-  width: 300px;
+  
  
 }
 
@@ -14,7 +14,7 @@
 
 .dark-card-img {
   background-color: #333;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .card-title {
@@ -32,4 +32,4 @@
 .btn-outline-light:hover {
   background-color: #555;
   color: #fff;
-}
+} 

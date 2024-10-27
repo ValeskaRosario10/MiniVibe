@@ -1,7 +1,7 @@
 import "./App.css";
 import { useContext, useEffect, useState } from "react";
 import Card from "./components/Card";
-import CreatePlaylist from "./components/CreatePlaylist";
+import CreatePlaylist from "../Spotify Cone/CreatePlaylist";
 import { initializePlaylist } from "./initialize";
 import Navbar from "./components/Navbar";
 import { MusicContext } from "./Context";
@@ -125,7 +125,7 @@ function App() {
               className="btn btn-outline-success w-100"
               disabled={resultOffset === 0}
             >
-              Previous Next Page: {resultOffset / 20}
+              Previous  Page: {resultOffset / 20}
             </button>
           </div>
           <div className="col">
@@ -196,7 +196,7 @@ function App() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <CreatePlaylist />
+       
 
 
       </div>

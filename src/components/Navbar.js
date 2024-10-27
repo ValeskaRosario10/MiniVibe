@@ -82,7 +82,7 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
                 aria-label="Close"
               />
             </div>
-            <div className="modal-body">
+            <div className="modal-body bg-dark">
               <PinnedMusic />
             </div>
           </div>
@@ -96,7 +96,7 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
         aria-labelledby="likedMusicModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog ">
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="likedMusicModalLabel">
@@ -109,8 +109,8 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
                 aria-label="Close"
               />
             </div>
-            <div className="modal-body">
-              <LikedMusic />
+            <div className="modal-body bg-dark">
+              <LikedMusic className="bg-dark "/>
             </div>
           </div>
         </div>

@@ -26,7 +26,9 @@ function App() {
     setIsLoading(true);
     try {
       const response = await fetch(
+        // `https://v1.nocodeapi.com/vrosario/spotify/DAGWtjjdTDMhbBzh/search?q=${keyword}&type=track&offset=${resultOffset}`,
         `https://api.spotify.com/v1/search?q=${keyword}&type=track&offset=${resultOffset}`,
+       
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -147,11 +149,15 @@ function App() {
           <div className="col-12 py-5 text-center">
             <h1 style={{ color: "white" }} >
               <i className="bi bi-music-note-list mx-3"></i>
-              v-music
+              MiniVibe
             </h1>
           <h3 className="py-5" style={{ color: "white" }}>Discover music in 30 seconds</h3>
 
           <div className="git">
+
+          <p style={{ color: "white" }}>
+    Copyright © {curryear}
+  </p>
   <a
     target="_blank"
     rel="noreferrer"
@@ -163,17 +169,15 @@ function App() {
               </a>
 
               <footer>
-  <p style={{ color: "white" }}>
-    Copyright © {new Date().getFullYear()}
-  </p>
+
   <div>
-    <a href="https://github.com/ValeskaRosario10" style={{ color: "white", textDecoration: "none" }}>ValeskaRosario</a>
+    <a href="https://github.com/ValeskaRosario10" style={{ color: "white", textDecoration: "none" }}>Valeska Rosario</a>
   </div>
   <div>
-    <a href="https://github.com/SayantikaRoy2004" style={{ color: "white", textDecoration: "none" }}>SayantikaRoy</a>
+    <a href="https://github.com/SayantikaRoy2004" style={{ color: "white", textDecoration: "none" }}>Sayantika Roy</a>
   </div>
   <div>
-    <a href="https://github.com/sherlyshindal" style={{ color: "white", textDecoration: "none" }}>ShreyaShandal</a>
+    <a href="https://github.com/sherlyshindal" style={{ color: "white", textDecoration: "none" }}>Shreya Shindal</a>
   </div>
   <div>
     <a href="https://github.com/mars613" style={{ color: "white", textDecoration: "none" }}>Marcia Rodrigues</a>

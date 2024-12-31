@@ -23,33 +23,3 @@ Once the development server is running, you can access the app by visiting http:
 
 If you would like to contribute to this project, feel free to submit a pull request or open an issue. 
 
-
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Current user
-
-
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-expression
-
-scoop bucket add hookdeck https://GitHub.com/hookdeck/scoop-hookdeck-cli.git
-
-create new source 
-sayantika
-
-
-webhooks-> add webhook
-
-payload url-> https://hkdk.events/fwhwkwb4vsj6ym
-
-
-scm polling
-poll scm
-h/5  * * * *
-
-pipeline
-scm 
-gut
-
-copy path on GitHub
-save
-stage view
-
-1.txt

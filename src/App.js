@@ -1,7 +1,7 @@
 import "./App.css";
 import { useContext, useEffect, useState } from "react";
 import Card from "./components/Card";
-import CreatePlaylist from "../Spotify Cone/CreatePlaylist";
+// import CreatePlaylist from "../Spotify Cone/CreatePlaylist";
 import { initializePlaylist } from "./initialize";
 import Navbar from "./components/Navbar";
 import { MusicContext } from "./Context";
@@ -183,8 +183,6 @@ function App() {
     <a href="https://github.com/mars613" style={{ color: "white", textDecoration: "none" }}>Marcia Rodrigues</a>
   </div>
 </footer>
-
-
             </div>
           </div>
         </div>
@@ -196,9 +194,6 @@ function App() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-       
-
-
       </div>
     </>
   );
